@@ -1,8 +1,9 @@
-const Stats = () => {
+const Stats = ({ totalItems, packedItems, packedPercentage }) => {
 	return (
 		<footer className='stats'>
 			<em>
-				You have X items on your list and you have packed X% of your list.
+				You have {totalItems} items on your list, and you have packed{' '}
+				{packedPercentage}% of your list ({packedItems}/{totalItems} packed).
 			</em>
 		</footer>
 	);
