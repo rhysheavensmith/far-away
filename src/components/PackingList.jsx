@@ -8,7 +8,7 @@ const PackingList = ({ travelItems, setTravelItems }) => {
 		);
 	};
 	const removeItem = (index) => {
-		setTravelItems(travelItems.filter((item, i) => i !== index));
+		setTravelItems(travelItems.filter((_, i) => i !== index));
 	};
 	return (
 		<div className='list'>
